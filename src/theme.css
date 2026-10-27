@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------------
+   THEME TOKENS
+   Re-skinning for another client? Change the values in this file
+   (plus src/content.js) and the whole site follows.
+------------------------------------------------------------------- */
+:root {
+  /* colour — matched to the liquid sculpture hero */
+  --bg: #070609;
+  --bg-2: #0b090f;
+  --card: rgba(255, 238, 246, 0.024);
+  --card-hover: rgba(255, 46, 147, 0.055);
+  --line: rgba(255, 235, 245, 0.085);
+  --line-hover: rgba(255, 46, 147, 0.42);
+  --text: #f5f2f4;
+  --muted: rgba(245, 242, 244, 0.66);
+  --accent: #ff2e93; /* neon pink */
+  --accent-2: #c9157a;
+  --accent-rose: #f39ec4; /* warm metallic rose from sculpture */
+  --accent-rgb: 255, 46, 147;
+  --accent-2-rgb: 201, 21, 122;
+  --accent-text: #ffc8e3;
+  --accent-soft: rgba(var(--accent-rgb), 0.12);
+  --glow: 0 0 42px rgba(var(--accent-rgb), 0.36);
+
+  /* type — Geist + Instrument Serif italic matching the hero */
+  --font-display: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Instrument Serif", "Times New Roman", serif;
+  --font-body: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* shape + layout */
+  --radius: 20px;
+  --radius-sm: 14px;
+  --container: 1180px;
+  --gutter: 24px;
+  --section-pad: 84px;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --gutter: 40px;
+    --section-pad: 124px;
+  }
+}
